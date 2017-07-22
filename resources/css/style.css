@@ -1,0 +1,104 @@
+/*UNIVERSAL*/
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #454145;
+    margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  border: 3px solid limegreen;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+.logo img {
+  transition: all 0.25s ease-in-out 0.1s;
+}
+
+.button-transition:hover {
+  font-weight: bold;
+  color: white;
+  background-color: #F905ED;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #454145;
+}
+
+.image-transition:hover {
+  font-weight: bold;
+  height: 2.5rem;
+  color: white;
+  background-color: #F905ED;
+  margin: 0.75rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #454145;
+}
+
+/*HEADER*/
+header {
+  background-color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid purple;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border: 1px solid blue;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.image-container {
+  height: 4rem;
+  border: 0.5px solid red;
+}
+
+.image-container img {
+  height: 2rem;
+  margin: 1rem 0.1rem 1rem 1.5rem;
+}
+
+.color2 {
+  color: #f905ed;
+}
+
+nav {                                                   /*DELETE THIS*/
+  border: 1px solid orange;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  padding-right: 1rem;
+}
+
+#last-menu-item {
+  padding-right: 0.5rem;
+}
+
+/*********************HEADER: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
