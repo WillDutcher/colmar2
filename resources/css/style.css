@@ -1,4 +1,4 @@
-/*UNIVERSAL*/
+/*********************UNIVERSAL*********************/
 html {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -6,8 +6,22 @@ html {
     margin: 0;
 }
 
-.mobile {
-  display: none;
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
 }
 
 img {
@@ -20,8 +34,8 @@ img {
   border: 3px solid limegreen;
 }
 
-a {
-  text-decoration: none;
+.mobile {
+  display: none;
 }
 
 a,
@@ -49,12 +63,12 @@ a,
 }
 
 
-/*HEADER*/
+/*********************HEADER*********************/
 header {
   background-color: white;
 }
 
-.logo-container {
+.header-container {
   display: flex;
   align-items: center;
   border: 1px solid purple;
@@ -70,11 +84,11 @@ header {
   height: 4rem;
 }
 
-.image-container {
+.logo.image-container {
   border: 0.5px solid red;
 }
 
-.image-container img {
+.logo.image-container img {
   height: 2rem;
   margin: 1rem 0.1rem 1rem 1.5rem;
 }
@@ -100,9 +114,9 @@ nav {                                                   /*DELETE THIS*/
 }
 
 /*********************HEADER: RESPONSIVE DESIGN*********************/
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
 
-}
+}*/
 
 @media only screen and (max-width: 600px) {
   .desktop {
@@ -114,7 +128,7 @@ nav {                                                   /*DELETE THIS*/
   .mobile img {
     height: 3rem;
   }
-  .image-container {
+  .logo.image-container {
     display: none;
   }
   .logo {
@@ -127,3 +141,182 @@ nav {                                                   /*DELETE THIS*/
 /*@media only screen and (max-width: 480px) {
 
 }*/
+
+/*********************BANNER*********************/
+.banner {
+  display: flex;
+  background-color: #ffedfe;
+}
+
+.banner-image-container {
+  max-width: 60%;
+  padding: 2rem 2.5rem 2rem 2rem;
+}
+
+.banner-text {
+  display: flex;
+  align-content: center;
+  padding-right: 1.5rem;
+}
+
+.banner-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-text-spacing {
+  padding: 0.75rem 0;
+}
+
+.banner-button {
+  font-family: 'Open Sans', sans-serif;
+  align-self: center;
+  width: 50%;
+  text-align: center;
+  background-color: #fdabf9;
+  margin-top: 0.75rem;
+  color: #454145;
+  font-size: 1.25rem;
+  font-weight: 900;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #454145;
+  padding: 0.5rem 0;
+}
+.banner-button {
+  padding: 0.5rem 1rem;
+}
+/*********************BANNER: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 960px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .banner-button {
+    width: 9rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+  }
+  .desktop {
+    display: none;
+  }
+  .banner-image-container {
+    background-color: #f905ed;
+    max-width: 100%;
+    height: 11.25rem;
+  }
+  .banner-text {
+    padding: 2rem 1rem;
+  }
+  .banner-text-spacing {
+    padding: 0;
+  }
+  .banner-text-container h3 {
+    padding: 2rem 0 1.5rem 0;
+  }
+  .banner-button {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+}
+
+/*********************MAIN*********************/
+
+
+
+/*********************MAIN: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 768px) {
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+}
+
+
+
+/*********************COURSES*********************/
+
+
+/*********************COURSES: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 768px) {
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+}
+
+
+
+/*********************THESIS*********************/
+
+
+/*********************THESIS: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 768px) {
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+}
+
+
+/*********************FOOTER*********************/
+
+
+/*********************FOOTER: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 768px) {
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+}
