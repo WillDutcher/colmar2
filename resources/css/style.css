@@ -111,6 +111,9 @@ nav {                                                   /*DELETE THIS*/
   .mobile {
     display: block;
   }
+  .mobile img {
+    height: 3rem;
+  }
   .image-container {
     display: none;
   }
@@ -121,6 +124,6 @@ nav {                                                   /*DELETE THIS*/
   }
 }
 
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
 
-}
+}*/
