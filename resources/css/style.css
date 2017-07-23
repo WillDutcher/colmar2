@@ -25,11 +25,13 @@ h3 {
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 img {
   max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .container {
@@ -160,18 +162,25 @@ nav {                                                   /*DELETE THIS*/
   background-color: #ffedfe;
 }
 
-.banner-image-container {
+.banner-left {
   max-width: 60%;
-  padding: 2rem 2.5rem 2rem 1.5rem;
 }
 
-.banner-text {
+.banner-left-container {
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.banner-image-container {
+  width: 100%;
+}
+
+.banner-right {
   display: flex;
   align-content: center;
-  padding-right: 1.5rem;
+  padding: 2rem 1.5rem 2rem 1rem;
 }
 
-.banner-text-container {
+.banner-right-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,18 +232,18 @@ nav {                                                   /*DELETE THIS*/
   .desktop {
     display: none;
   }
-  .banner-image-container {
+  .banner-left {
     background-color: #f905ed;
     max-width: 100%;
     height: 11.25rem;
   }
-  .banner-text {
+  .banner-right {
     padding: 2rem 1rem;
   }
   .banner-text-spacing {
     padding: 0;
   }
-  .banner-text-container h3 {
+  .banner-right-text-container h3 {
     padding: 2rem 0 1.5rem 0;
   }
   .banner-button {
@@ -256,19 +265,35 @@ nav {                                                   /*DELETE THIS*/
   background-color: white;
   display: flex;
 }
+
+.main-left,
+.main-right {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-left {
   max-width: 60%;
   border-right: 1px solid #ffedfe;
 }
-.main-image-container {
+
+.main-left-container {
+  display: flex;
+  flex-direction: column;
+}
+.main-left-content-container {
   padding: 2rem 1.5rem;
 }
 
-.main-text-container {
+.main-left-image-container {
+  width: 100%;
+}
+
+.main-left-text-container {
   padding: 0 1.5rem 2rem 1.5rem;
 }
 
-.main-text-container h2 {
+.main-left-text-container h2 {
   font-weight: bold;
 }
 
@@ -278,35 +303,24 @@ nav {                                                   /*DELETE THIS*/
   font-size: 0.95rem;
 }
 
-
-.main-left,
-.main-right {
-  display: flex;
-  flex-direction: column;
-}
-
 .main-right {
   flex: 1;
 }
 
-.subcontent {
+.main-right-content-container {
   display: flex;
   padding: 2rem 1rem 2rem 1rem;
   align-items: center;
 }
 
-.subcontent-image-container {
-  max-width: 30%;
+.main-right-image-container {
+  max-width: 35%;
 }
 
-.subcontent-text {
+.main-right-content-text {
   display: flex;
   flex-direction: column;
   padding: 0 0 0 1rem;
-}
-
-.subcontent-text span {
-  font-size: .85rem;
 }
 
 #orientation {
@@ -323,10 +337,12 @@ nav {                                                   /*DELETE THIS*/
   padding: 1rem;
 }
 
-.subcontent-text h3,
-.subcontent-text h5 {
+.main-right-content-text h3,
+.main-right-content-text h5 {
   padding-bottom: 0.5rem;
 }
+
+
 /*********************MAIN: RESPONSIVE DESIGN*********************/
 @media only screen and (max-width: 768px) {
 
@@ -345,7 +361,23 @@ nav {                                                   /*DELETE THIS*/
 
 
 /*********************COURSES*********************/
+/*.one {
+  background-color: limegreen;
+  display: flex;
+}
 
+.two {
+  border-right: 1px solid #ffedfe;
+  max-width: 60%;
+}
+
+.three {
+  padding: 2rem 1.5rem;
+}
+
+.four {
+  width: 100%;
+}*/
 
 /*********************COURSES: RESPONSIVE DESIGN*********************/
 @media only screen and (max-width: 768px) {
