@@ -16,12 +16,16 @@ h1 {
 }
 
 h2 {
-
+  font-size: 2.125rem;
 }
 
 h3 {
   font-size: 1.75rem;
   font-weight: 500;
+}
+
+h5 {
+  font-size: 1rem;
 }
 
 img {
@@ -39,7 +43,8 @@ img {
 }
 
 a,
-.logo img {
+.logo img,
+.read-more {
   transition: all 0.25s ease-in-out 0.1s;
 }
 
@@ -62,6 +67,14 @@ a,
   box-shadow: 4px 4px 4px #454145;
 }
 
+.read-more:hover {
+  font-weight: 300;
+  color: white;
+  background-color: #20BADC;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #454145;
+}
 
 /*********************HEADER*********************/
 header {
@@ -149,7 +162,7 @@ nav {                                                   /*DELETE THIS*/
 
 .banner-image-container {
   max-width: 60%;
-  padding: 2rem 2.5rem 2rem 2rem;
+  padding: 2rem 2.5rem 2rem 1.5rem;
 }
 
 .banner-text {
@@ -239,9 +252,81 @@ nav {                                                   /*DELETE THIS*/
 }
 
 /*********************MAIN*********************/
+.main {
+  background-color: white;
+  display: flex;
+}
+.main-left {
+  max-width: 60%;
+  border-right: 1px solid #ffedfe;
+}
+.main-image-container {
+  padding: 2rem 1.5rem;
+}
+
+.main-text-container {
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.main-text-container h2 {
+  font-weight: bold;
+}
+
+.quote {
+  font-family: 'Cedarville Cursive', cursive;
+  padding: 1.5rem 0 2rem 0;
+  font-size: 0.95rem;
+}
 
 
+.main-left,
+.main-right {
+  display: flex;
+  flex-direction: column;
+}
 
+.main-right {
+  flex: 1;
+}
+
+.subcontent {
+  display: flex;
+  padding: 2rem 1rem 2rem 1rem;
+  align-items: center;
+}
+
+.subcontent-image-container {
+  max-width: 30%;
+}
+
+.subcontent-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 1rem;
+}
+
+.subcontent-text span {
+  font-size: .85rem;
+}
+
+#orientation {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+#campus {
+  border-top: 1px solid #ffedfe;
+  padding: 1rem;
+}
+
+#lecture {
+  background-color: #ffedfe;
+  padding: 1rem;
+}
+
+.subcontent-text h3,
+.subcontent-text h5 {
+  padding-bottom: 0.5rem;
+}
 /*********************MAIN: RESPONSIVE DESIGN*********************/
 @media only screen and (max-width: 768px) {
 
