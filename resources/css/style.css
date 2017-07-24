@@ -24,7 +24,12 @@ h3 {
   font-weight: 500;
 }
 
-h5 {
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h6 {
   font-size: 0.75rem;
 }
 
@@ -46,7 +51,8 @@ img {
 
 a,
 .logo img,
-.read-more {
+.read-more,
+.legal ul li a {
   transition: all 0.25s ease-in-out 0.1s;
 }
 
@@ -76,6 +82,11 @@ a,
   padding: 0.5rem;
   border-radius: 5px;
   box-shadow: 4px 4px 4px #454145;
+}
+
+.legal ul li a:hover {
+  font-weight: bold;
+  color: #f905ed;
 }
 
 /*********************HEADER*********************/
@@ -339,7 +350,7 @@ nav {                                                   /*DELETE THIS*/
 }
 
 .main-right-content-text h3,
-.main-right-content-text h5 {
+.main-right-content-text h6 {
   padding-bottom: 0.5rem;
 }
 
@@ -357,7 +368,7 @@ nav {                                                   /*DELETE THIS*/
     font-weight: 600;
   }
 
-  .main-right-content-text h5 {
+  .main-right-content-text h6 {
     font-size: 1.5rem;
   }
 
@@ -410,13 +421,6 @@ nav {                                                   /*DELETE THIS*/
   }
 }
 
-
-@media only screen and (max-width: 480px) {
-
-}
-
-
-
 /*********************COURSES*********************/
 /*.one {
   background-color: limegreen;
@@ -436,14 +440,88 @@ nav {                                                   /*DELETE THIS*/
   width: 100%;
 }*/
 
-/*********************COURSES: RESPONSIVE DESIGN*********************/
-@media only screen and (max-width: 768px) {
+.courses {
+  background-color: #ffedfe;
+  padding-top: 1rem;
+}
 
+.courses-material {
+  padding: 1rem;
+}
+
+.courses h2 {
+text-align: center;
+padding-bottom: 1rem;
+}
+
+.courses-offered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.course-image-container {
+  margin: 1rem;
+  min-width: 26%;
+  max-width: 28%;
+  background-color: white;
+}
+
+.course-text {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-text h3 {
+  font-size: 1rem;
+}
+
+.courses-heading {
+  padding: 0.5rem 0;
+}
+
+.course-description {
+  padding-bottom: 1.5rem;
+}
+
+/*********************COURSES: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 700px) {
+  .course-text h4 {
+    font-size: 1rem;
+  }
+  .course-text h3 {
+    font-size: 0.75rem;
+  }
 }
 
 
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 640px) {
+  .courses-material .desktop {
+    display: none;
+  }
+  .courses-material .mobile {
+    display: block;
+    padding-top: 1rem;
+  }
+  .courses {
+    background-color: white;
+  }
+  .courses-button {
+    background-color: #fd9af8;
+    padding: 0.75rem;
+    margin: 0.5rem;
+  }
+  div .mobile h4 {
+    border-radius: 0.75rem;
+  }
+  div .mobile h4:hover {
+    font-weight: bold;
+    color: white;
+    background-color: #F905ED;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    box-shadow: 4px 4px 4px #454145;
+  }
 }
 
 
@@ -473,7 +551,41 @@ nav {                                                   /*DELETE THIS*/
 
 
 /*********************FOOTER*********************/
+footer {
+  display: flex;
+  background-color: #ffedfe;
+  font-size: 0.75rem;
+}
 
+.footer-container {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #f905ed;
+}
+
+.copyright {
+  flex: 1;
+  padding: 1rem 0 1.75rem 1.5rem;
+}
+
+.legal {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem 1.75rem 0;
+}
+
+.legal ul {
+display: flex;
+justify-content: center;
+}
+
+.legal ul li a {
+  color: black;
+}
+
+.terms {
+  padding-right: 1.5rem;
+}
 
 /*********************FOOTER: RESPONSIVE DESIGN*********************/
 @media only screen and (max-width: 768px) {
@@ -487,5 +599,12 @@ nav {                                                   /*DELETE THIS*/
 
 
 @media only screen and (max-width: 480px) {
-
+  .copyright {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .legal {
+    display: none;
+  }
 }
