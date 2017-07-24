@@ -42,7 +42,7 @@ img {
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  border: 3px solid limegreen;
+  border: 1px solid #ffedef;
 }
 
 .mobile {
@@ -89,6 +89,7 @@ a,
   color: #f905ed;
 }
 
+
 /*********************HEADER*********************/
 header {
   background-color: white;
@@ -97,21 +98,15 @@ header {
 .header-container {
   display: flex;
   align-items: center;
-  border: 1px solid purple;
 }
 
 .logo {
   display: flex;
   flex: 1;
   align-items: center;
-  border: 1px solid blue;
   font-weight: bold;
   letter-spacing: 0.1rem;
   height: 4rem;
-}
-
-.logo.image-container {
-  border: 0.5px solid red;
 }
 
 .logo-image-container img {
@@ -121,10 +116,6 @@ header {
 
 .color2 {
   color: #f905ed;
-}
-
-nav {                                                   /*DELETE THIS*/
-  border: 1px solid orange;
 }
 
 .menu {
@@ -139,8 +130,8 @@ nav {                                                   /*DELETE THIS*/
   padding-right: 0.5rem;
 }
 
-/*********************HEADER: RESPONSIVE DESIGN*********************/
 
+/*********************HEADER: RESPONSIVE DESIGN*********************/
 @media only screen and (max-width: 600px) {
   .desktop {
     display: none;
@@ -166,6 +157,7 @@ nav {                                                   /*DELETE THIS*/
     display: none;
   }
 }
+
 
 /*********************BANNER*********************/
 .banner {
@@ -219,6 +211,7 @@ nav {                                                   /*DELETE THIS*/
   padding: 0.5rem 1rem;
 }
 
+
 /*********************BANNER: RESPONSIVE DESIGN*********************/
 @media only screen and (max-width: 960px) {
   h1 {
@@ -270,6 +263,7 @@ nav {                                                   /*DELETE THIS*/
     font-weight: 500;
   }
 }
+
 
 /*********************MAIN*********************/
 .main {
@@ -421,32 +415,15 @@ nav {                                                   /*DELETE THIS*/
   }
 }
 
+
 /*********************COURSES*********************/
-/*.one {
-  background-color: limegreen;
-  display: flex;
-}
-
-.two {
-  border-right: 1px solid #ffedfe;
-  max-width: 60%;
-}
-
-.three {
-  padding: 2rem 1.5rem;
-}
-
-.four {
-  width: 100%;
-}*/
-
 .courses {
   background-color: #ffedfe;
   padding-top: 1rem;
 }
 
 .courses-material {
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
 }
 
 .courses h2 {
@@ -484,6 +461,7 @@ padding-bottom: 1rem;
   padding-bottom: 1.5rem;
 }
 
+
 /*********************COURSES: RESPONSIVE DESIGN*********************/
 @media only screen and (max-width: 700px) {
   .course-text h4 {
@@ -493,7 +471,6 @@ padding-bottom: 1rem;
     font-size: 0.75rem;
   }
 }
-
 
 @media only screen and (max-width: 640px) {
   .courses-material .desktop {
@@ -525,28 +502,126 @@ padding-bottom: 1rem;
 }
 
 
-@media only screen and (max-width: 480px) {
-
+/*********************THESIS*********************/
+.thesis-container {
+  background-color: white;
+  text-align: center;
 }
 
+.thesis-container h2 {
+  padding: 2rem 0;
+}
 
+.thesis {
+  display: flex;
+  padding: 0 1.5rem 2rem 1.5rem;
+}
 
-/*********************THESIS*********************/
+.thesis-background h2 {
+padding-bottom: 1rem;
+}
+
+.thesis-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  min-width: 60%;
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.thesis-video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-text-container {
+  padding-top: 1.5rem;
+  text-align: left;
+}
+
+.thesis h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.video-text-container .excerpt {
+  font-family: 'Cedarville Cursive', cursive;
+  line-height: 1.2;
+  font-size: .9rem;
+  padding-top: 1rem;
+}
+
+.thesis-subcontent {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-substory {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.thesis-substory-image {
+  flex: 1;
+  max-width: 35%;
+  min-width: 35%;
+}
+
+.thesis-substory-text {
+  text-align: left;
+  padding: 1rem;
+}
+
+.thesis-substory-text span {
+  font-size: 0.90rem;
+}
+
+.thesis-substory-styling {
+  padding: 1rem 0 1rem 1rem;
+}
+
+#fisma-styling {
+  background-color: #ffedfe;
+}
 
 
 /*********************THESIS: RESPONSIVE DESIGN*********************/
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 800px) {
+  .thesis-substory-image {
+    flex: 1;
+    max-width: 50%;
+    min-width: 50%;
+  }
+  .thesis-substory {
+    flex-direction: column;
+    align-items: center;
+  }
+  .thesis-substory-text h4 {
+    font-size: 1rem;
+  }
+  .thesis-substory-styling {
+    padding: 0;
+  }
+  #fisma-styling {
+    background-color: white;
+  }
 }
-
 
 @media only screen and (max-width: 600px) {
-
+.thesis-container .mobile {
+  padding: 2rem 0 1rem 0;
 }
-
-
-@media only screen and (max-width: 480px) {
-
+.thesis-content {
+  max-width: 100%;
+  min-width: 100%;
+  padding: 1rem 0 0 0;
+  }
+  .thesis-subcontent {
+    display: none;
+  }
 }
 
 
@@ -587,17 +662,8 @@ justify-content: center;
   padding-right: 1.5rem;
 }
 
+
 /*********************FOOTER: RESPONSIVE DESIGN*********************/
-@media only screen and (max-width: 768px) {
-
-}
-
-
-@media only screen and (max-width: 600px) {
-
-}
-
-
 @media only screen and (max-width: 480px) {
   .copyright {
     font-size: 1rem;
